@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        img {
+            width: 30%;
+            height: auto;
+            margin: 5px;
+        }
+        .gallery {
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Image Gallery</h2>
+    <div class="gallery">
+        <img src="{{ url_for('static', filename='IMAGE1.jpg') }}" alt="Description of image 1">
+        <img src="{{ url_for('static', filename='IMAGE2.jpeg') }}" alt="Description of image 2">
+        <img src="{{ url_for('static', filename='IMAGE3.jpg') }}" alt="Description of image 3">
+    </div>
+</body>
+</html>
